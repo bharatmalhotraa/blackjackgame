@@ -1,0 +1,114 @@
+body{
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#deckinit{
+    width: 800px;
+    height: 1200px;
+    margin-left: 4300px;
+    margin-top: 500px;
+}
+#draw{
+    height: 300px;
+    width: 600px;
+    margin-left: 1800px;
+    background-color: green;
+    color: black;
+    font-size: 70px;
+    font-weight: 20px;
+} 
+#but{
+    height: 300px;
+    width: 600px;
+    margin-left: 180px;
+    margin-top: 50px;
+    background-color: green;
+    color: black;
+    font-size: 70px;
+    font-weight: 20px;
+}
+#butt{
+    height: 300px;
+    width: 600px;
+    margin-left: 180px;
+    margin-top: 50px;
+    background-color: green;
+    color: black;
+    font-size: 70px;
+    font-weight: 20px;
+}
+#restextd{
+    font-size: 100px;
+}
+#restexty{
+    font-size: 100px;
+}
+#hide{
+    visibility: hidden;
+}
+@keyframes slidein{
+    from{
+        transform: translatex(2000px);
+    }
+    to{
+        transform: translateX(300px);
+    }
+}
+@keyframes slideinrotate{
+    from{
+        transform:  translateX(2000px) rotateY(180deg);
+    }
+    to{
+        transform: translateX(100px);
+
+    }
+
+}
+@keyframes rotate{
+    from{
+        transform: rotateY('0');
+    }
+    to{
+        transform: rotateY('360deg');
+    }
+}
+.slidein{
+    animation: rotate 1s;
+    animation: slideinrotate 2s;
+    animation-fill-mode: both;
+    
+}
+.hide{
+    visibility: hidden;
+}
+.slide{
+    animation: slidein 2s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes hideMe{
+    0%{
+        opacity: 1;
+    }
+    99.99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.fade{
+    animation: hideMe 5s forwards;
+    display: none;
+
+}
+
+.results{
+    margin-top: -2000px;
+    margin-left: 2300px;
+    position: absolute;
+    height: 1000px;
+    box-shadow: 50px 100px 10000px 500px rgba(0,0,0,2);
+    display: none;
+}
